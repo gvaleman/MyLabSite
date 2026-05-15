@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /fig/
+Disallow: /fig_cellphone/
+
+Sitemap: https://mylabonline.app/sitemap.xml

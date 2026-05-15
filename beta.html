@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Beta — MyLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/landing.css">
+    <style>
+        .beta-page { max-width: 680px; margin: 0 auto; padding: 60px 24px 80px; }
+        .beta-page h1 { font-size: 2rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+        .beta-page .sub { color: var(--gray); font-size: 1rem; margin-bottom: 36px; }
+        .form-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 36px; margin-bottom: 32px; }
+        .form-row { display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+        .form-row input, .form-card select { flex: 1; min-width: 200px; padding: 13px 16px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 0.95rem; font-family: inherit; color: var(--dark); background: #fafbfc; }
+        .form-card input:focus, .form-card select:focus { outline: none; border-color: var(--blue); background: #fff; }
+        .form-card select { color: #374151; cursor: pointer; }
+        .form-card select option:first-child { color: #9ca3af; }
+        .btn-submit { width: 100%; padding: 15px; background: var(--blue); color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; font-family: inherit; margin-top: 6px; }
+        .btn-submit:hover { background: #1c6ea0; }
+        .terms { background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 28px 30px; font-size: 0.85rem; color: var(--gray); line-height: 1.75; }
+        .terms h3 { color: var(--navy); font-size: 0.95rem; margin-bottom: 14px; }
+        .terms ol { padding-left: 18px; }
+        .terms ol li { margin-bottom: 10px; }
+        .terms a { color: var(--blue); }
+        .back-link { display: inline-block; margin-top: 28px; color: var(--gray); font-size: 0.9rem; text-decoration: none; }
+        .back-link:hover { color: var(--navy); }
+        .required-note { font-size: 0.8rem; color: var(--gray); margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="beta-page">
+    <a href="index.html" class="back-link">&larr; Volver al sitio</a>
+
+    <h1>Solicitar participación — Programa Beta</h1>
+    <p class="sub">Complete el formulario para aplicar. Los laboratorios seleccionados recibirán acceso completo y gratuito durante 4 meses.</p>
+
+    <div class="form-card">
+        <form action="https://formspree.io/f/xgodbnyy" method="POST">
+            <div class="form-row">
+                <input type="text" name="nombre" placeholder="Su nombre completo *" required>
+                <input type="text" name="laboratorio" placeholder="Nombre del laboratorio *" required>
+            </div>
+            <div class="form-row">
+                <input type="email" name="email" placeholder="Correo electrónico *" required>
+                <input type="text" name="ciudad" placeholder="Ciudad / País">
+            </div>
+            <select name="volumen" required>
+                <option value="">Volumen aproximado de solicitudes por día *</option>
+                <option value="1-20">1 – 20 solicitudes</option>
+                <option value="21-50">21 – 50 solicitudes</option>
+                <option value="51-100">51 – 100 solicitudes</option>
+                <option value="100+">Más de 100 solicitudes</option>
+            </select>
+            <div style="margin:14px 0;"></div>
+            <select name="sistema_actual" required>
+                <option value="">¿Qué utiliza actualmente para gestionar resultados? *</option>
+                <option value="papel">Papel / Escritura manual</option>
+                <option value="excel">Excel / Hojas de cálculo</option>
+                <option value="software">Otro software de laboratorio</option>
+                <option value="nada">Nada — estoy empezando</option>
+            </select>
+            <button type="submit" class="btn-submit">Enviar solicitud</button>
+            <p class="required-note">* Campos obligatorios</p>
+        </form>
+    </div>
+
+    <div class="terms">
+        <h3>Términos del Programa Beta</h3>
+        <ol>
+            <li><strong>Selección.</strong> Completar este formulario no garantiza la participación. MyLab seleccionará hasta 10 laboratorios a su exclusivo criterio. Los seleccionados serán notificados por correo electrónico.</li>
+            <li><strong>Duración.</strong> El acceso gratuito tiene una duración de 4 meses desde la activación de la cuenta. Al finalizar este período, el participante podrá elegir un plan de suscripción o dar por terminado el acceso.</li>
+            <li><strong>Naturaleza Beta.</strong> El software se encuentra en fase de prueba. Pueden presentarse errores, interrupciones o cambios sin previo aviso. MyLab no se responsabiliza por pérdida de datos. Se recomienda mantener registros paralelos durante el período beta.</li>
+            <li><strong>Retroalimentación.</strong> El participante se compromete a reportar errores y compartir su experiencia de uso a través de los canales indicados por el desarrollador. Al finalizar el período beta, deberá proporcionar una declaración escrita sobre su experiencia que podrá ser utilizada en el sitio web de MyLab.</li>
+            <li><strong>Encuestas.</strong> Durante la beta, el participante podrá recibir encuestas de satisfacción y solicitudes de interacción con el desarrollador vía correo electrónico. Su participación en estas actividades es fundamental para mejorar el sistema.</li>
+            <li><strong>Cancelación.</strong> MyLab se reserva el derecho de cancelar el acceso gratuito de cualquier participante en cualquier momento, por cualquier razón, incluyendo pero no limitado a: inactividad prolongada, uso inadecuado del sistema, o falta de respuesta a las solicitudes de retroalimentación.</li>
+            <li><strong>Privacidad.</strong> Los datos proporcionados en este formulario serán utilizados únicamente para el proceso de selección y comunicación relacionada con el programa beta. No serán compartidos con terceros.</li>
+            <li><strong>Consultas.</strong> Cualquier duda sobre el programa puede dirigirse a <a href="mailto:hello@mylabonline.app">hello@mylabonline.app</a>.</li>
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>
